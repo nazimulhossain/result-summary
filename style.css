@@ -15,8 +15,10 @@ button {
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
