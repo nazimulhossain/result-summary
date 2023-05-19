@@ -9,7 +9,9 @@ const data = async () => {
   response.forEach((el) => {
     const listEl = `<li class="summary__category ${el.category.toLowerCase()}">
   <div class="summary__icon-container">
-  <img class="icon__${el.category.toLowerCase()}" src=${el.icon}></img>
+  <img class="icon__${el.category.toLowerCase()}" src=${
+      el.icon
+    } alt="${el.category.toLowerCase()}-icon"></img>
   <h4 class="summary__type">${el.category}</h4>
 </div>
   <div class="summary__score">
